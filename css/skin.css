@@ -1028,7 +1028,7 @@ Service design entries descriptions NEEDS TO BE LOADED AT THE END
     
  /* custom fadein bckgs preloading  */ 
 
-body::after{
+/*body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
     content:url(../images/pssd-bg1.jpg) url(../images/pssd-bg2.jpg) url(../images/pssd-bg3.jpg) url(../images/pssd-bg4.jpg) url(../images/pssd-bg5.jpg) url(../images/comm-bg1.jpg) url(../images/comm-bg2.jpg) url(../images/comm-bg3.jpg) url(../images/comm-bg4.jpg) url(../images/comm-bg5.jpg);
-}
+}*/
