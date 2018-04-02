@@ -341,6 +341,7 @@ Copyright: ThemeMountain
 /*------------------------------------------------------------------
 [7. Font Icons]
 */
+/*
 @font-face {
   font-family: 'entypo';
   src: url('../font/entypo.eot');
@@ -350,7 +351,8 @@ Copyright: ThemeMountain
        url('../font/entypo.svg#entypo') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
+
 [class^="tms-arrow-nav"]:before, 
 [class*="tms-arrow-nav"]:before {
   font-family: "entypo";

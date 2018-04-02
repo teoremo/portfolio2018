@@ -895,11 +895,11 @@ color:#0a2477;
 */
 
 .bio-bg{
-background-image:url(/images/bio-bg.jpg)
+background-image:url(../images/bio-bg.jpg)
  }
 
 .pssd-bg{
-background-image:url(/images/pssd-bg.jpg);
+background-image:url(../images/pssd-bg.jpg);
     transition:	all 0.7s ease-in-out 0.7s;
     -webkit-transition:	all 0.7s ease-in-out;
     -moz-transition:	all 0.7s ease-in-out;
@@ -907,7 +907,7 @@ background-image:url(/images/pssd-bg.jpg);
  }
 
 .commun-bg{
-background-image:url(/images/commun-bg.jpg);
+background-image:url(../images/commun-bg.jpg);
     transition:	all 0.7s ease-in-out 0.7s;
     -webkit-transition:	all 0.7s ease-in-out;
     -moz-transition:	all 0.7s ease-in-out;
@@ -915,15 +915,15 @@ background-image:url(/images/commun-bg.jpg);
  }
 
 .cuisine-bg{
-background-image:url(/images/cuisine-bg.jpg)
+background-image:url(../images/cuisine-bg.jpg)
  }
 
 .music-bg{
-background-image:url(/images/music-bg.jpg)
+background-image:url(../images/music-bg.jpg)
  }
 
 .footer-bg{
-	background-image:url(/images/footer-bg.jpg);
+	background-image:url(../images/footer-bg.jpg);
 }
 
 /*----------------------------------------------------------------
@@ -931,7 +931,7 @@ fadein custom bcgs classes
     */    
     
 .pssd-bg1{
-background-image:url(/images/pssd-bg1.jpg);
+background-image:url(../images/pssd-bg1.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -939,7 +939,7 @@ background-image:url(/images/pssd-bg1.jpg);
 }
 
 .pssd-bg2{
-background-image:url(/images/pssd-bg2.jpg);
+background-image:url(../images/pssd-bg2.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -947,7 +947,7 @@ background-image:url(/images/pssd-bg2.jpg);
 }
 
 .pssd-bg3{
-background-image:url(/images/pssd-bg3.jpg);
+background-image:url(../images/pssd-bg3.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -955,7 +955,7 @@ background-image:url(/images/pssd-bg3.jpg);
 }
 
 .pssd-bg4{
-background-image:url(/images/pssd-bg4.jpg);
+background-image:url(../images/pssd-bg4.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -963,7 +963,7 @@ background-image:url(/images/pssd-bg4.jpg);
 }
 
 .pssd-bg5{
-background-image:url(/images/pssd-bg5.jpg);
+background-image:url(../images/pssd-bg5.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -974,7 +974,7 @@ background-image:url(/images/pssd-bg5.jpg);
 
 
 .comm-bg1{
-background-image:url(/images/comm-bg1.jpg);
+background-image:url(../images/comm-bg1.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -982,7 +982,7 @@ background-image:url(/images/comm-bg1.jpg);
 }
 
 .comm-bg2{
-background-image:url(/images/comm-bg2.jpg);
+background-image:url(../images/comm-bg2.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -990,7 +990,7 @@ background-image:url(/images/comm-bg2.jpg);
 }
 
 .comm-bg3{
-background-image:url(/images/comm-bg3.jpg);
+background-image:url(../images/comm-bg3.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -998,7 +998,7 @@ background-image:url(/images/comm-bg3.jpg);
 }
 
 .comm-bg4{
-background-image:url(/images/comm-bg4.jpg);
+background-image:url(../images/comm-bg4.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -1006,7 +1006,7 @@ background-image:url(/images/comm-bg4.jpg);
 }
 
 .comm-bg5{
-background-image:url(/images/comm-bg5.jpg);
+background-image:url(../images/comm-bg5.jpg);
     -webkit-transition:	all 0.4s ease-in-out;
     -moz-transition:	all 0.4s ease-in-out;
     -o-transition:	all 0.4s ease-in-out;
@@ -1030,5 +1030,5 @@ Service design entries descriptions NEEDS TO BE LOADED AT THE END
 
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url(/images/pssd-bg1.jpg) url(/images/pssd-bg2.jpg) url(/images/pssd-bg3.jpg) url(/images/pssd-bg4.jpg) url(/images/pssd-bg5.jpg) url(/images/comm-bg1.jpg) url(/images/comm-bg2.jpg) url(/images/comm-bg3.jpg) url(/images/comm-bg4.jpg) url(/images/comm-bg5.jpg);
+    content:url(../images/pssd-bg1.jpg) url(../images/pssd-bg2.jpg) url(../images/pssd-bg3.jpg) url(../images/pssd-bg4.jpg) url(../images/pssd-bg5.jpg) url(../images/comm-bg1.jpg) url(../images/comm-bg2.jpg) url(../images/comm-bg3.jpg) url(../images/comm-bg4.jpg) url(../images/comm-bg5.jpg);
 }

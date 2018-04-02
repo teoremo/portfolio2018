@@ -3007,7 +3007,7 @@ pre code{
 /*------------------------------------------------------------------
 [27. Font Icons]
 */
-@font-face {
+/*@font-face {
 	font-family: 'entypo';
 	src: url('../font/entypo.eot');
 	src: url('../font/entypo.eot#iefix') format('embedded-opentype'),
@@ -3016,7 +3016,7 @@ pre code{
 		url('../font/entypo.svg#entypo') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
+}*/
 .icon-note:before { content: '\e800'; } /* '' */
 .icon-logo-db:before { content: '\e91b'; } /* '' */
 .icon-music:before { content: '\e802'; } /* '' */
