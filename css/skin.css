@@ -1,0 +1,1034 @@
+/*------------------------------------------------------------------
+Nietzsche Edge Skin
+Version: 1;
+Author: ThemeMountain
+Copyright: ThemeMountain
+
+[Table of contents]
+
+1. Typography
+2. Background Color Classes
+3. Header & Navigation
+4. Slider & Parallax
+5. Lightbox
+6. Plugin Preloader
+7. Rollovers
+8. Homepage
+9. About Pages
+10. Contact Pages
+11. Project Pages
+12. Fullscreen Pages
+13. Blog Pages
+14. Resolution Media Queries
+15. Form Elements
+16. Social Lists
+17. Footer
+18. Media Element Player
+19. Helper Classes
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ * 
+
+/*[1. Typography] */
+
+body,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+.navigation ul li a,
+.overlay-navigation ul li a{
+	font-family: 'Rambla', 'Helvetica Neue', Arial, sans-serif;
+}
+.font-alt-2{
+	font-family: 'Rambla', sans-serif;
+}
+.counter{
+	font-family: 'Rambla', Arial, sans-serif;
+}
+
+/* Headings and Links */
+a, 
+p a,
+.box a:not(.button){
+    background-image: linear-gradient(180deg,#fff,#fff 250%);
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    -webkit-transition: background-size .4s ease;
+    -moz-transition: background-size .4s ease;
+    -ms-transition: background-size .4s ease;
+    -o-transition: background-size .4s ease;
+    transition: background-size .4s ease;
+    color: #000;
+}
+
+a:hover,
+p a:hover,
+h2 a:hover,
+.box a:not(.button):hover{
+    background-size: 100% 100%;
+    color: #00A79D;
+}
+
+.footer-top-inner a:hover {
+    color: black;
+}
+
+.overlay-navigation ul li.current > a:hover {
+    color: black;
+}
+
+.overlay-navigation ul li a:hover {
+    color: black;
+}
+
+h1, h1 a,
+h2, h2 a,
+h3, h3 a,
+h4, h4 a,
+h5, h5 a,
+h6, h6 a{
+	color: #333;
+	letter-spacing: 0rem;
+}
+
+h1 {
+	font-size: 3.8rem;
+
+}
+h2 {
+	font-size: 2.8rem;
+ 
+}
+h3 {
+	font-size: 2.2rem;
+
+}
+h3.widget-title {
+	font-size: 1.8rem;
+
+}
+h4 {
+	font-size: 1.6rem;
+
+}
+h5 {
+	font-size: 1.5rem;
+
+}
+h6 {
+	font-size: 1.4rem;
+	
+}
+p{
+	font-weight: 200;
+	font-size: 2.0rem;
+	line-height: 1.6;
+    color:#2F2F2F;
+}
+[class*="hero-"] p,
+.lead{
+	font-size: 1.9rem;
+}
+.blog-masonry .grid-item h2{
+	font-size: 2.2rem;
+}
+ u {
+    text-decoration: none;
+    border-bottom: 2px solid #00A79D;
+  }
+
+
+.bolder{
+    font-size:2rem
+}
+
+.title{
+    font-size:5.0rem;
+    color: #555;
+     font-weight: 600;
+}
+.maintitle{
+    font-size:7.0rem;
+    color: #555;
+     font-weight: 600;
+}
+
+.back{
+    padding-top:3rem;
+    padding-bottom:5rem;
+    border-top: 1px solid #B8B8B8;
+}
+
+.back:hover{
+    background-color:#efefef;
+}
+
+.intro
+{
+    font-size:2rem;
+}
+/*------------------------------------------------------------------
+[2. Background Color Classes]
+*/
+.bkg-charcoal{
+	background-color: #333; 
+	border-color: #333;
+}
+.bkg-hover-charcoal:hover{
+	background-color: #000; 
+	border-color: #000;
+}
+
+/*------------------------------------------------------------------
+[3. Header & Navigation]
+*/
+.header .logo{
+	width: 12rem;
+	padding-bottom: 0;
+}
+.header-1 .header-inner{
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.header-1.header-background .header-inner{
+	border-bottom: 1px solid rgba(255,255,255,0);
+}
+.header .navigation > ul > li > a{
+	padding-bottom: 0.4rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+}
+.header-1 .navigation > ul > li > a,
+.header-1 .navigation-show a,
+.header-4 .navigation > ul > li > a,
+.header-4 .navigation-show a{
+	color: #050505;
+}
+.nav-dark .navigation > ul > li > a,
+.nav-dark .navigation-show a{
+	color: #333;
+}
+
+/* Overlay Navigation Colors */
+.overlay-navigation-wrapper{
+	background: rgba(0,0,0,0.85);
+}
+.overlay-navigation > ul > li > a{
+	font-size: 2rem;
+	line-height: 2.2;
+	letter-spacing: 0.2rem;
+
+	font-weight: 200;
+	color: #fff;
+}
+.overlay-navigation .sub-menu a{
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+.overlay-navigation .sub-menu li:first-child{
+	padding-top: 0.5rem;
+}
+.overlay-navigation .sub-menu li:last-child{
+	padding-bottom: 1rem;
+}
+.overlay-navigation-footer {
+	color: #666;
+}
+
+/* Navigation - Active Colors */
+.header .navigation > ul > li > a{
+	margin: 0 1.5rem;
+	padding-left: 0;
+	padding-right: 0;
+}
+.overlay-navigation ul li.current > a{
+	color: #fff;
+}
+.overlay-navigation .sub-menu{
+	border-top: 1px solid transparent;
+}
+.overlay-navigation .sub-menu.open{
+	border-top: 1px solid #555;
+}
+.header .navigation > ul > li.current > a{
+	padding-bottom: 0.2rem;
+	color: #050505;
+
+}
+.nav-dark .navigation > ul > li.current > a{
+	color: #333;
+	border-bottom: 1px solid #333;
+}
+
+/* Navigation - Hover Colors */
+.header a:hover.navigation-show a:hover, 
+.header .navigation > ul > li > a:hover, 
+.header .overlay-navigation > ul > li > a:hover{
+	color: #6b6b6b;
+	opacity: 0.6;
+}
+.nav-dark .navigation-show a:hover, 
+.nav-dark .navigation > ul > li > a:hover{
+	color: #333;
+	opacity: 0.6;
+}
+
+/* Header Background on Scroll Color */
+.header-background .navigation-show a,
+.header-background .navigation > ul > li > a,
+.header-background .overlay-navigation > ul > li > a{
+	color: #666;
+}
+.header-2.header-sticky .navigation > ul > li.current > a,
+.header-background .navigation > ul > li.current > a{
+	color: #fff;
+	border-bottom: none;
+}
+.header-background .navigation-show a:hover, 
+.header-background .navigation > ul > li > a:hover, 
+.header-background .overlay-navigation > ul > li > a:hover,
+.nav-dark .header-background .navigation-show a:hover, 
+.nav-dark .header-background .navigation > ul > li > a:hover{
+	color: #fff;
+	opacity: 1;
+}
+.overlay-navigation-footer .social-list a{
+	color: #999;
+}
+
+/* Header mobile & breakpoint colors */
+@media only screen and (max-width: 960px){
+	.header, 
+	.header .header-inner{
+		background: rgba(255, 255, 255, 0.24);
+	}
+	.header-inner .navigation-show a{
+		color: #050505;
+	}
+	.header-inner .navigation-show a:hover{
+		color: #fff;
+		opacity: 1;
+	}
+}
+
+/*------------------------------------------------------------------
+[4. Slider & Parallax]
+*/
+.full-width-slider,
+.parallax.fixed-height{
+	height: 100vh;
+    }
+.mobile .full-width-slider,
+.mobile .parallax.fixed-height{
+	height: 50rem;
+}
+.tm-slider-container,
+.parallax{
+	background: #000;
+}
+
+/*------------------------------------------------------------------
+[5. Lightbox]
+*/
+.tm-lightbox{
+	background: rgba(0,0,0,0.85);
+}
+#tml-caption span{
+	border: none;
+}
+#tml-caption{
+	font-style: normal;
+	font-weight: 200;
+	letter-spacing: 0.1rem;
+	color: #fff;
+}
+.tml-nav{
+	color: #000;
+}
+
+/*------------------------------------------------------------------
+[6. Plugin Preloader]
+*/
+.tm-loader #circle {
+	width: 2rem;
+	height: 2rem;
+	background: none;
+	border: 3px solid rgba(255,255,255,0.5);
+}
+
+/*------------------------------------------------------------------
+[7. Rollovers]
+*/
+.overlay-info > span > span{
+	text-align: center;
+	vertical-align: bottom;
+}
+.overlay-info .project-number{
+	font-size: 2rem;
+	color: #fff;
+	font-weight: 200;
+}
+.overlay-info .project-title{
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.overlay-info .project-description{
+	font-size: 1.4rem;
+	font-weight: 200;
+}
+
+/*------------------------------------------------------------------
+[8. Homepage]
+*/
+.portfolio-filter-menu a{
+	font-weight: bold;
+	color: #666;
+}
+.portfolio-filter-menu a:hover{
+	color: #333;
+}
+.portfolio-filter-menu a.active{
+	border-width: 1px;
+}
+.home-page [class*="portfolio-"]{
+	background: none;
+}
+
+
+/* Hero Sections */
+.hero-5-contact > .row:before{
+	background: #fff;
+}
+.hero-5-contact > .row:after,
+.hero-7-contact > .row:before{
+	background-image:url(../images/contact/contact-hero.jpg);
+}
+
+/* Form Response */
+.contact-form-container .form-response{
+	color: #666;
+}
+
+/* Contact Style 3 Breakpoint Colors */
+@media only screen and (max-width: 768px){
+	.hero-5-contact{
+		color: #666;
+	}
+	.hero-5-contact h1,
+	.hero-5-contact h2,
+	.hero-5-contact h3, 
+	.hero-5-contact h4, 
+	.hero-5-contact h5, 
+	.hero-5-contact h6{
+		color: #333;
+	}
+	.hero-5-contact .hero-content-inner{
+		text-align: left;
+	}
+}
+
+/*------------------------------------------------------------------
+[11. Project Pages]
+*/
+
+/* Pagination */
+[class*="pagination-"]{
+	color: #666;
+    
+}
+[class*="pagination-"] a:hover{
+	color: #333;
+}
+
+/*------------------------------------------------------------------
+[12. Fullscreen Pages]
+*/
+.error-404 .background-image,
+.error-500 .background-image{
+	background-image: url(../images/fullscreen/error-1.jpg);
+}
+.coming-soon-1 .background-image{
+	background-image: url(../images/fullscreen/error-1.jpg);
+}
+.coming-soon-1 .logo{
+	width: 15rem;
+}
+.error-404 .search-form-container{
+	max-width: 50rem;
+}
+.error-404 .search-form-container .button{
+	width: auto;
+}
+.error-404 .form-search{
+	font-size: 1.7rem;
+	font-weight: 200;
+	text-align: center;
+}
+
+/*------------------------------------------------------------------
+[13. Blog Pages]
+*/
+.post-content.with-background{
+	background: #f4f4f4;
+}
+.post-info{
+	color: #999;
+}
+.post-media .mejs-container.mejs-audio .mejs-controls .mejs-play,
+.post-media .mejs-container.mejs-audio .mejs-controls .mejs-pause{
+	border-radius: 0;
+}
+.post-media .mejs-container.mejs-audio .mejs-controls{
+	border-radius: 0;
+}
+.blog .pagination-1 .page-list a{
+	color: #999;
+}
+.blog .pagination-1 .page-list a:hover,
+.blog .pagination-1 .page-list .current{
+	color: #333;
+}
+aside .widget li{
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+/*------------------------------------------------------------------
+[14. Resolution Media Queries]
+*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (		 min-device-pixel-ratio: 2),
+only screen and (			min-resolution: 192dpi),
+only screen and (				min-resolution: 2dppx) { 
+	
+
+/*------------------------------------------------------------------
+[15. Form Elements]
+*/
+.form-element[class*="border-"]{
+	background: none;
+}
+input.form-element,
+textarea.form-element{
+	padding-left: 0;
+	padding-right: 0;
+	background: none;
+	color: #666;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 0.4rem solid #666;
+	border-radius: 0;
+}
+.form-element:focus,
+textarea:focus{
+	background: none;
+	color: #333;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 0.4rem solid #222;
+	box-shadow: none;
+}
+.form-element.required-field,
+textarea.required-field{
+	border-color: #bb9b69;
+}
+.form-element.required-field:focus,
+textarea.required-field:focus{
+	border-bottom: 0.4rem solid #222;
+}
+.fullscreen-section .form-element,
+.fullscreen-section textarea{
+	padding-left: 0;
+	padding-right: 0;
+	background: none;
+	color: #fff;
+	border-bottom: 0.4rem solid #fff;
+	border-radius: 0;
+}
+.fullscreen-section .form-element:focus, 
+.fullscreen-section textarea:focus{
+	background: none;
+	color: #fff;
+	border-bottom: 0.4rem solid #fff;
+	box-shadow: none;
+}
+.fullscreen-section .form-element.required-field,
+.fullscreen-section textarea.required-field{
+	border-color: #bb9b69;
+}
+.fullscreen-section .form-element.required-field:focus,
+.fullscreen-section textarea.required-field:focus{
+	border-bottom: 0.4rem solid #fff;
+}
+
+/*------------------------------------------------------------------
+[16. Social Lists]
+*/
+.bkg-charcoal{
+	background-color: #333; 
+	border-color: #333;
+}
+.bkg-hover-charcoal:hover{
+	background-color: #000; 
+	border-color: #000;
+}
+.social-list li{
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.social-list,
+.social-list li a{
+	color: #999;
+}
+.social-list li a{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.social-list li.social-list-label{
+	color: #333;
+}
+.social-list li a:hover{
+	color: #333;
+}
+.overlay-navigation-footer .social-list a,
+.footer-1 .social-list a, 
+.fullscreen-section footer .social-list a{
+	margin-left: 0.8rem;
+	margin-right: 0.8rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+.social-list li:first-child a{
+	margin-left: 0;
+}
+.overlay-navigation-footer .social,
+.overlay-navigation-footer .social-list a{
+	color: #666;
+}
+.fullscreen-section .social-list,
+.fullscreen-section .social-list a{
+	color: #fff;
+}
+.fullscreen-section .social-list a{
+	opacity: 0.6;
+}
+.fullscreen-section .social-list a:hover{
+	color: #fff;
+	opacity: 1;
+}
+.footer-1 .social-list,
+.footer-1 .social-list a{
+	color: #555;
+}
+
+/*------------------------------------------------------------------
+[17. Footer]
+*/
+.footer{
+	color: #777;
+}
+.footer a{
+	color: #999;
+}
+.footer a:hover,
+.footer .social-list a:hover{
+	color: #777;
+}
+.footer .footer-logo{
+	width: 5rem;
+}
+.footer .footer-bottom .copyright,
+.footer .footer-bottom .social-list{
+	float: none;
+}
+.footer h3{
+	font-size: 1.9rem;
+	 font-weight: 200;
+    text-transform: uppercase;
+	color: #f4f4f4;
+}
+.footer h2{
+	font-size: 2.8rem;
+	 font-weight: 100;
+	color: #999;
+}
+.footer address{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: 200;
+}
+
+/*------------------------------------------------------------------
+[18. Media Element Player]
+*/
+.mejs-container.mejs-audio .mejs-controls{
+	border-radius: 3px;
+}
+.mejs-container .mejs-controls,
+.mejs-controls .mejs-volume-button .mejs-volume-slider{
+	background: rgba(255, 255, 255, 0.9);
+}
+.mejs-container.mejs-audio .mejs-controls{
+	background: #f9f9f9;
+}
+/* Time track, vol track */
+.mejs-controls .mejs-time-rail .mejs-time-loaded,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total{
+	background: #999;
+}
+/* Time track, vol level track */
+.mejs-controls .mejs-time-rail .mejs-time-current,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{
+	background: #666;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
+	background: #ffffff;
+}
+/* Tooltip */
+.mejs-controls .mejs-time-rail .mejs-time-float {
+	background: #000;
+}
+/* Play Button */
+.mejs-container.mejs-audio .mejs-controls .mejs-play,
+.mejs-container.mejs-audio .mejs-controls .mejs-pause{
+	background: #eee;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+/* Time */
+.mejs-container .mejs-controls .mejs-time span{
+	color: #666;
+}
+
+/*------------------------------------------------------------------
+[19. Helper Classes]
+*/
+.fullscreen-inner.v-align-bottom,
+.fullscreen-caption-content-inner.v-align-bottom,
+.tm-parallax-content-inner.v-align-bottom{
+	padding-bottom: 14rem;
+}
+@media only screen and (max-width: 768px){
+	.fullscreen-section .background-on-mobile{
+		background: #f4f4f4;
+	}
+	.fullscreen-section .background-on-mobile *{
+		color: #666 !important;
+	}
+}
+
+/*------------------------------------------------------------------
+[20. Demo Misc]
+*/
+
+a.action-buy{
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+a.action-buy:hover{
+	background-color: #bb9b69;
+	border-color: #bb9b69;
+}
+
+
+
+/*------------------------------------------------------------------
+[Header My adds]
+*/
+
+.topbarli{
+ padding-top:1rem;
+ }
+
+.footer-text{
+ color:#E1E1E2;
+ }
+
+/*----------------------------------------------------------------
+ My adds pssd pages
+ */
+
+.covergimble{
+  background: url("../images/portfolio/gimble/gimble1.jpg");
+  background-size: cover;
+}
+
+.section-pssd{
+  margin-top:3rem;
+  border-bottom: 1px solid #B8B8B8;
+    left:5%;
+    -webkit-transition:	all 1.6s ease-in-out;
+    -moz-transition:	all 1.6s ease-in-out;
+     -o-transition:	all 1.6s ease-in-out;
+    transition:	all 1.6s ease-in-out;
+}
+.section-pssd2{
+  border-top: 1px solid #B8B8B8;
+  padding-top:4rem;
+  border-bottom: 1px solid #B8B8B8;
+}
+
+.full-width-slider,
+.parallax.covere{
+	height: 100vh;
+}
+
+.green{
+color:#00A79D;
+}
+.azul{
+color:#0a2477;
+}
+
+.linksgimble{
+    color:#00A79D;
+	-webkit-transition-property: background, border-color, color:, opacity;
+	-moz-transition-property: background, border-color, color, opacity;
+	-o-transition-property: background, border-color, color, opacity;
+	-ms-transition-property: background, border-color, color, opacity;
+	transition-property: background, border-color, color, opacity;
+	-webkit-transition-duration: 600ms;
+	-moz-transition-duration: 600ms;
+	-o-transition-duration: 600ms;
+	-ms-transition-duration: 600ms;
+	transition-duration: 600ms;
+}
+.linksgimble:hover{
+    color:black;
+}
+
+.imagetop{
+    padding-top:8rem;
+    padding-bottom:5rem;
+}
+
+
+.sectionintro {
+    margin-top:15%;
+}
+
+.sectionpssd {
+    margin-top:15%;
+
+}
+
+.sectiongraphic {
+    margin-top:10%;
+  -webkit-transition: all 2000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) 2s; 
+   -moz-transition: all 2000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) 2s; 
+     -o-transition: all 2000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) 2s; 
+        transition: all 2000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) 2s; /* easeInOutQuart */
+}
+
+.sectionmusic {
+    margin-top:10%;
+}
+.sectioncuisine {
+    margin-top:5%;
+}
+.sectionfooter {
+    margin-top:5%;
+}
+
+/*---------------------------------------------------------------*/
+ 
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../images/teoremoloader.gif')  no-repeat rgb(249,249,249);
+    background-size:cover;
+}
+
+
+
+/*----------------------------------------------------------------
+ Lightbox size*/
+
+#tml-content-wrapper{
+    top: 8% !important;
+    right: 8% !important;
+    bottom: 8% !important;
+    left: 8% !important;
+}
+
+/*----------------------------------------------------------------
+ Gif lightbox loader*/
+
+.tm-loader{
+    display: none !important;
+} 
+
+.tm-lightbox{
+    background-color: #fff;
+    background-image: none;
+}
+.tm-lightbox.loading{
+    background-image: url('../images/teoremoloader.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*------------------------------------------------------------------
+[My adds]
+*/
+
+.bio-bg{
+background-image:url(/images/bio-bg.jpg)
+ }
+
+.pssd-bg{
+background-image:url(/images/pssd-bg.jpg);
+    transition:	all 0.7s ease-in-out 0.7s;
+    -webkit-transition:	all 0.7s ease-in-out;
+    -moz-transition:	all 0.7s ease-in-out;
+     -o-transition:	all 0.7s ease-in-out;
+ }
+
+.commun-bg{
+background-image:url(/images/commun-bg.jpg);
+    transition:	all 0.7s ease-in-out 0.7s;
+    -webkit-transition:	all 0.7s ease-in-out;
+    -moz-transition:	all 0.7s ease-in-out;
+     -o-transition:	all 0.7s ease-in-out;
+ }
+
+.cuisine-bg{
+background-image:url(/images/cuisine-bg.jpg)
+ }
+
+.music-bg{
+background-image:url(/images/music-bg.jpg)
+ }
+
+.footer-bg{
+	background-image:url(/images/footer-bg.jpg);
+}
+
+/*----------------------------------------------------------------
+fadein custom bcgs classes
+    */    
+    
+.pssd-bg1{
+background-image:url(/images/pssd-bg1.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+.pssd-bg2{
+background-image:url(/images/pssd-bg2.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+.pssd-bg3{
+background-image:url(/images/pssd-bg3.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+.pssd-bg4{
+background-image:url(/images/pssd-bg4.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+.pssd-bg5{
+background-image:url(/images/pssd-bg5.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+     
+
+
+.comm-bg1{
+background-image:url(/images/comm-bg1.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+.comm-bg2{
+background-image:url(/images/comm-bg2.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+.comm-bg3{
+background-image:url(/images/comm-bg3.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+.comm-bg4{
+background-image:url(/images/comm-bg4.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+.comm-bg5{
+background-image:url(/images/comm-bg5.jpg);
+    -webkit-transition:	all 0.4s ease-in-out;
+    -moz-transition:	all 0.4s ease-in-out;
+    -o-transition:	all 0.4s ease-in-out;
+    transition:	all 0.4s ease-in-out;
+}
+
+/*----------------------------------------------------------------
+Service design entries descriptions NEEDS TO BE LOADED AT THE END
+    */
+#desc1,#desc2,#desc3,#desc4,#desc5{
+   opacity:0;
+}
+
+@media screen and (max-width: 500px) {
+    #desc1,#desc2,#desc3,#desc4,#desc5{
+   display:none;
+}
+    
+    
+ /* custom fadein bckgs preloading  */ 
+
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url(/images/pssd-bg1.jpg) url(/images/pssd-bg2.jpg) url(/images/pssd-bg3.jpg) url(/images/pssd-bg4.jpg) url(/images/pssd-bg5.jpg) url(/images/comm-bg1.jpg) url(/images/comm-bg2.jpg) url(/images/comm-bg3.jpg) url(/images/comm-bg4.jpg) url(/images/comm-bg5.jpg);
+}
