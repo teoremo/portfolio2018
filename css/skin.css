@@ -152,10 +152,32 @@ p{
     color: #555;
      font-weight: 600;
 }
+
 .maintitle{
     font-size:7.0rem;
     color: #555;
      font-weight: 600;
+}
+
+.title2{
+    font-size:5.0rem;
+    color: #555;
+     font-weight: 600;
+}
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 736px) {
+    .maintitle {
+    	font-size:5.0rem;
+    	margin-top:-45%;
+
+	}
+	.title2{
+    font-size:3.0rem;
+}
+	.pabout{
+		font-size:1.7rem;
+	}
 }
 
 .back{
